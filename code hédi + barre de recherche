@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="entete">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Omnes santé|Online mediacal consultation</title>
+
+</head>
+
+<body>
+
+    <header class="main-head">
+
+        <nav>
+            <h1 id="logo">
+                <img src="Images/Logo rectangle.png" alt="Image au pif" width="300" />
+            </h1>
+
+            <input type="search" id="search" value="" onchange="ouvrirPage()">
+            <input type="button" id="button" onclick="ouvrirPage()" value="Chercher">
+
+            <script>
+                function ouvrirPage() {
+                    var a = document.getElementById("search").value;
+
+                    if (a === "accueil") {
+                        window.open("/Users/romai/OneDrive/Bureau/HTML%20ECE/Projet%20Webdynamique/accueil.html");
+                    }
+
+                    if (a === "pornhub") {
+                        window.open("https://fr.pornhub.com/video/search?search=granny+coquine");
+                    }
+
+                    if (a === "youtube") {
+                        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+                    }
+                }
+            </script>
+  
+        </nav>
+    </header>
+
+    <section class="event">
+        <nav>
+        <ul>
+                <li><a href="#"> <button id="button">
+                            Accueil
+                        </button> </a></li>
+                <li><a href="#">
+                        <button id="button">
+                            Tout parcourir
+                        </button> </a></li>
+                <li><a href="#"> <button id="button">
+                            Rechcerche
+                        </button> </a></li>
+                <li><a href="#"> <button id="button">
+                            Rendez-vous
+                        </button> </a></li>
+                <li><a href="#"> <button id="button">
+                            Votre compte
+                        </button> </a></li>
+        </ul>
+        </nav>
+        <h2>Évenement de la semaine :</h2>
+        <h3>Je sais pas </h3>
+
+
+
+        <div class="slider">
+            <h3>Nos spécialistes </h3>
+            <div class="slides">
+                <div class="slide"><img src="Images/medecin1.png" alt="" /></div>
+                <div class="slide"><img src="Images/medecin2.png" alt="" /></div>
+                <div class="slide"><img src="Images/medecin3.png" alt="" /></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <nav>
+        <h1 id="logo">
+                <img src="Images/Logo rectangle.png" alt="Image au pif" width="300" />
+        </h1>
+        </nav>
+
+        <h3>Nous trouver </h3>
+        <!-- Iframe pour ajouter une carte sur le site -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.337894978977!2d2.284293215730631!3d48.85176677928681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701b4f58251b%3A0x167f5a60fb94aa76!2sECE%20Paris%20Lyon!5e0!3m2!1sfr!2sfr!4v1653312966372!5m2!1sfr!2sfr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
+        Copyright &copy; 2022 Omnes santé<br>
+        +33 65 88 54 74 10<br>
+        <a href="mailto:omnes.sante@gmail.com">omnes.sante@gmail.com
+
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
