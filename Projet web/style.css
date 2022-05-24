@@ -1,20 +1,38 @@
+/*CSS pour tout*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/*style du header*/
-html {
-    font-size: 62.5%;
+.container {
+    /*border: 1px solid red;*/
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.text-center{
+   text-align:center;
 }
 
 h1 {
     font-size: 2.6rem;
 }
 
-h2 {
-    font-size: 4.8rem;
+h2{
+        color:#ff6348;
+        font-size: 4rem;
+        margin-bottom: 2%;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 h3 {
@@ -34,6 +52,16 @@ a {
     color: #ffffff;
 }
 
+
+
+/*CSS pour la barre de navigation*/
+.logo {
+    
+    width: 10%;
+    float: left;
+    flex: 2 1 40rem;
+
+}
 .main-head {
 
     background: #f6eec9;
@@ -58,32 +86,36 @@ nav ul {
     list-style: none;
 }
 
-#logo {
-    flex: 2 1 40rem;
+/*CSS pour les actualités*/
 
+.event {
+    background-color: #fdce98;
+    padding:4% 0;
 }
 
+.box-3{
+    
+    width:28%;
+    float:left;
+    margin:2%;
+}
 
-/*#page {
+/*CSS pour la barre de réseaux sociaux*/
+.social{
     background-color: #f6eec9;
+    
+
 }
 
-#entete {
-    position: absolute;
-    left: 20%;
-    float: center;
-    width: 680px;
-    height: 60%;
+.social ul{
+    list-style-type:none;
 }
 
-
-/*body {
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    height: 100vh;
-    font-family: arial;
-}*/
+.social ul li
+{
+  display:inline;
+  padding:12;
+}
 
 /* Style des boutons */
 button {
@@ -97,6 +129,19 @@ button {
     padding: 10px 40px;
     transition: all .25s;
     margin: 20px;
+}
+
+.btn {
+
+    width: 15%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
 }
 
 button::after,
@@ -119,17 +164,14 @@ button:hover::after {
 button:hover::before {
     transform: translate(5px, 5px);
 }
-/* Scetion Event  */
-.event{
-    background-color: #f6eec9 ;
 
-}
 
- /*Slider*/
- 
+
+/*Slider*/
+
 .slider {
-    width:30%;
-    height:30%;
+    width: 30%;
+    height: 30%;
     overflow: hidden;
     margin: 150px auto;
 }
@@ -174,8 +216,14 @@ button:hover::before {
     }
 }
 
+.hr3 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #f6eec9, transparent);
+}
+
 /* footer */
 .footer {
     font-size: 2em;
-    background-color: #f6eec9
-} 
+    background-color: #fdce98;
+}
